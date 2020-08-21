@@ -13,14 +13,69 @@
         <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="style.css" rel="stylesheet">
+        <link href="dist/css/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c512016d9d.js" crossorigin="anonymous"></script>
+        <style>
+            h1,h5,h4,p { font-family: "Arial", sans-serif !important; }
+            .bg-whitesmoke { background-color: whitesmoke !important; }
+            .btn-social, .btn-social-icon { color: dimgray;}
+            .btn-social:hover, .btn-social-icon:hover{ color: black; }
+            .btn-social-icon { font-family: "Font Awesome 5 Brands" !important; }
+            .display-4 { font-size: 2.5rem;}
+            .lead { font-size: 1.2rem; }
+            iframe { border: 0; margin: 0; }
+            .no-bord { border: 0; }
+        </style>
     </head>
     <body>
-        <h1>Atropellos en San Pedro Garza García</h1>
+        <div class="bg-whitesmoke d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom box-shadow">
+            <h5 class="my-0 mr-md-auto font-weight-normal">
+                <img class="escudo img-responsive lazyloaded" width="40px"alt="Escudo de San Pedro Garza García" src="https://sanpedro.gob.mx/coronavirus/disc/images/logo.jpg"> San Pedro Garza García
+            </h5>
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a href="https://www.facebook.com/SanPedroGGNL" class="btn btn-social-icon btn-facebook">
+                    <span class="fa fa-facebook"></span>
+                </a>
+                <a href="https://www.instagram.com/sanpedronl/" class="btn btn-social-icon btn-instagram ">
+                    <span class="fa fa-instagram "></span>
+                </a>
+                <a href="https://twitter.com/SanPedroNL" class="btn btn-social-icon btn-twitter">
+                    <span class="fa fa-twitter"></span>
+                </a>
+                <a href="https://www.youtube.com/channel/UCu-NI7m9b10er45DLQCn1DQ" class="btn btn-social-icon btn-youtube">
+                    <span class="fa fa-youtube"></span>
+                </a>
+            </nav>
+        </div>
+        <div class="container">
+            <div class=" px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h4 class="display-4">Atropellos en San Pedro Garza García</h4>
+                <p class="lead">Listado de hechos viales catalogados como atropellos a peatones con al menos un lesionado o fallecido en el municipio de San Pedro Garza García. Datos del 2015 al 2019.</p>
+                
+            </div>
+            
+            <div class="card-deck mb-3 text-center">
+                <div class="card mb-4 box-shadow">                  
+                    <div class="card-body">
+                        <a href="data/atropellos_2015-2019.geojson" download="atropellos_2015-2019.geojson" class="btn btn-block btn-social">
+                            <span class="fa fa-atlas"></span> Descargar archivo .geojson
+                        </a>
+                    </div>
+                </div>
+                <div class="card mb-4 no-bord"></div>
+                <div class="card mb-4 box-shadow">                  
+                    <div class="card-body">
+                        <a href="data/atropellos_2015-2019.csv" download="atropellos_2015-2019.csv" class="btn btn-block btn-social">
+                            <span class="fa fa-file-csv"></span> Descargar archivo .csv
+                        </a>
+                    </div>
+                </div>
+              </div>
+                <iframe src="https://edgargtzgzz.carto.com/builder/1d46c0aa-fa80-4942-a33f-35c9eeb009f6/embed?state=%7B%22map%22%3A%7B%22ne%22%3A%5B25.636651459069302%2C-100.46207427978517%5D%2C%22sw%22%3A%5B25.69103802005013%2C-100.34465789794923%5D%2C%22center%22%3A%5B25.66384784022919%2C-100.4033660888672%5D%2C%22zoom%22%3A14%7D%7D" style="width: 100%; height: 460px"></iframe>
+        </div>
         
-        <h2>Descripción</h2>
-        <p>Listado de hechos viales catalogados como atropellos a peatones con al menos un lesionado o fallecido en el municipio de San Pedro Garza García. Datos del 2015 al 2019.</p>
+    
         
-        <iframe src="https://edgargtzgzz.carto.com/builder/1d46c0aa-fa80-4942-a33f-35c9eeb009f6/embed?state=%7B%22map%22%3A%7B%22ne%22%3A%5B25.636651459069302%2C-100.46207427978517%5D%2C%22sw%22%3A%5B25.69103802005013%2C-100.34465789794923%5D%2C%22center%22%3A%5B25.66384784022919%2C-100.4033660888672%5D%2C%22zoom%22%3A14%7D%7D" style="width: 100%"></iframe>
+        
     </body>
 </html>
